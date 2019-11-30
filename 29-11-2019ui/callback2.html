@@ -1,0 +1,16 @@
+<!--callback fun for addition of two numbers-->
+<!DOCTYPE html>
+<html>
+<head></head>
+<body></body>
+<script>
+	function add(a,b,callback){
+		document.write(`the sum of ${a} and ${b} is ${a+b}`);
+		callback();
+	}
+	function disp(){
+		document.write("this is after add");
+	}
+	add(5,6,disp);
+</script>
+</html>
